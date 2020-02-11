@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.481 sec <<< FAILURE!
+As a user I login to tours(Login to gmail)  Time elapsed: 2.143 sec  <<< ERROR!
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:34)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:73)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at utilities.Driver.Initialize(Driver.java:32)
+	at stepDefinitions.LoginStepDefs.iAmOn(LoginStepDefs.java:18)
+	at ✽.I am on "http://newtours.demoaut.com/"(file:src/test/java/features/login.feature:5)
+
